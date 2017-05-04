@@ -3,43 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>HTML 1</title>
-<p>User Login</p>
-<script>
-	var user = {username: "", password:"",email:""};
-	</script>
-<script type="text/javascript">
-        function createUser() {
-            var input = document.getElementById("Enter Username").value;
-			var input2 = document.getElementById("Enter pasword").value;
-            if (input2.length < 7 ) {
-                alert("Please enter a valid password");
-                return user;
-            }
-           document.getElementById("result").innerHTML = "You have entered " +;
-        }
-    </script>
+<h1>User Login</h1>
+<script>src= "Users.js"</script>
 </head>
 <body>
 <p id="demo"></p>
-<button type="button" onclick="document.write('Enter Username and Password')">Administrative Login</button>
-<button type="button" onclick= "document.write"> User Sign-up</button>
-<button type="button" onclick = "document.write('Enter username and Password')">User login</button>
-<script>
-	function hasNumbers(t)
-{
-    return /\d/.test(t);
-}
-
-	
-	function createUser(username, password, emailAddress){
-		document.getElementById("demo").innerHTML = "Enter a username and Password";
-		document.getElementById("demo").innerHTML = "Password must contain: at least 7 characters and at least 1 number]";
-		if(password.length() < 7 || hasNumber(password) != false){
-			window.alert("Password must contain: at least 7 characters and at least 1 number");
-		}
-	}
-	
-	
-	</script>
+<form action="AdminLogin.html" method="get">
+<button>Administrative Login</button>
+</form>
+<form action="CreateUser.html" method="get">
+<button>Create User</button>
+</form>
+<form action="userlogin.html" method="get">
+<button>User Login</button>
+</form>
 </body>
 </html>
