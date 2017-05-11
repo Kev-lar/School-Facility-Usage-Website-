@@ -8,6 +8,6 @@
  *
  * @author Kevin J
  */
-public class socialMedia {
+public class socialMedia {//
     
 }
