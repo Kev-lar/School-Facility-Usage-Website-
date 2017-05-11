@@ -1,5 +1,5 @@
 // Facility Class 
-var facility = {school: "", , sfacility: "", price: 0, id : 0, availability : true, phone: 0, size: 0 , }
+var facility = {school: "",sfacility: "", price: 0, id : 0, availability : true, size: 0 , occupants: 0}
 function bookFacility(facility){
 	if(facility.availability == true){
 		facility.availability = false;
@@ -7,8 +7,8 @@ function bookFacility(facility){
 	}
 
 }
-function addFacility(school, sfacility, price, id, availability, phone, size){
-	 var x = new facility(school, sfacility, price, id, availability, phone, size,);
+function addFacility(school, sfacility, price, id, availability, size, occupants){
+	 var x = new facility(school, sfacility, price, id, availability, size,occupants);
 	
 }
 function deleteFacility(facility){
@@ -16,7 +16,6 @@ function deleteFacility(facility){
 	facility.price = null;
 	facility.id = null;
 	facility.availability = null;
-	faclity.phone = null;
 	facility.size = null;
 }
 
