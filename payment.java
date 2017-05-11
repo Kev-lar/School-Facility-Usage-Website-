@@ -8,6 +8,6 @@
  *
  * @author Kevin J
  */
-public class payment {
+public class payment {//
     
 }
