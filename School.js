@@ -7,6 +7,7 @@ function addSchool(school, street, sNumber, zipcode, schoolName, phone){
 	
 }
 function deleteSchool(school){
+	"use strict";
 	school.street =null;
 	school.sNumber = null;
 	school.zipcode = null;
